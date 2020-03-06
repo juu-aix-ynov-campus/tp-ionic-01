@@ -17,5 +17,5 @@
         <ion-label position="floating">Floating Label</ion-label>
         <ion-input [(ngModel)]="monInput"></ion-input>
     </ion-item>
-    <app-explore-container [name]="monInput" (monOutput)="monInput = 'Coucou M1/M2'"></app-explore-container>
+    <app-explore-container [name]="monInput" (monOutput)="monInput = $event"></app-explore-container>
 </ion-content>

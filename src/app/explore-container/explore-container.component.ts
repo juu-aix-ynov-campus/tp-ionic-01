@@ -9,7 +9,7 @@ export class ExploreContainerComponent implements OnInit {
   @Input() name = 'plop';
   @Input() showParagraphe = true;
 
-  @Output() monOutput = new EventEmitter();
+  @Output() monOutput = new EventEmitter<string>();
 
   constructor() { }
 
@@ -17,7 +17,7 @@ export class ExploreContainerComponent implements OnInit {
 
   fireEvent() {
     console.log('fireEvent')
-    this.monOutput.emit();
+    this.monOutput.emit('bonjour papa !');
   }
 
 }
