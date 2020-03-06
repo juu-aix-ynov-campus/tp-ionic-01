@@ -16,8 +16,12 @@ export class ExploreContainerComponent implements OnInit {
   ngOnInit() {}
 
   fireEvent() {
-    console.log('fireEvent')
+    console.log('fireEvent');
     this.monOutput.emit('bonjour papa !');
+  }
+
+  getName() {
+    return `${this.name} 🙀`;
   }
 
 }
